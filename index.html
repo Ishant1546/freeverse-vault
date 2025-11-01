@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreeVerse - Premium Minecraft Services</title>
+    
+    <!-- Core CSS -->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/components/navigation.css">
+    <link rel="stylesheet" href="/css/components/buttons.css">
+    <link rel="stylesheet" href="/css/components/cards.css">
+    <link rel="stylesheet" href="/css/components/forms.css">
+    <link rel="stylesheet" href="/css/components/modals.css">
+    <link rel="stylesheet" href="/css/components/footer.css">
+    
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="/css/pages/home.css">
+    
+    <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -84,12 +96,11 @@
                         <i class="fas fa-robot"></i>
                     </div>
                     <h3>AFK Bot Hosting</h3>
-                    <p>Keep your Minecraft server active 24/7 with our intelligent AFK bot systems. Perfect for keeping your community lively.</p>
+                    <p>Keep your Minecraft server active 24/7 with our intelligent AFK bot systems.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> Automatic Restarts</li>
                         <li><i class="fas fa-check"></i> Custom Messages</li>
                         <li><i class="fas fa-check"></i> Multiple Instances</li>
-                        <li><i class="fas fa-check"></i> 24/7 Monitoring</li>
                     </ul>
                     <a href="/vault?category=bot-hosting" class="btn btn-outline">View Bot Plans</a>
                 </div>
@@ -99,12 +110,11 @@
                         <i class="fas fa-server"></i>
                     </div>
                     <h3>Server Hosting</h3>
-                    <p>Premium Minecraft server hosting with high-performance nodes, DDoS protection, and guaranteed uptime.</p>
+                    <p>Premium Minecraft server hosting with high-performance nodes and DDoS protection.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> High Performance</li>
                         <li><i class="fas fa-check"></i> DDoS Protection</li>
                         <li><i class="fas fa-check"></i> SSD Storage</li>
-                        <li><i class="fas fa-check"></i> Instant Setup</li>
                     </ul>
                     <a href="/vault?category=server-hosting" class="btn btn-outline">View Server Plans</a>
                 </div>
@@ -115,12 +125,11 @@
                         <i class="fas fa-crown"></i>
                     </div>
                     <h3>Elite Bundle</h3>
-                    <p>Get the complete package with both bot hosting and server hosting for the ultimate Minecraft experience.</p>
+                    <p>Get the complete package with both bot hosting and server hosting.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> Bot + Server Hosting</li>
                         <li><i class="fas fa-check"></i> Priority Support</li>
                         <li><i class="fas fa-check"></i> Custom Configurations</li>
-                        <li><i class="fas fa-check"></i> Discounted Pricing</li>
                     </ul>
                     <a href="/vault?category=bot-hosting&plan=elite" class="btn btn-primary">Get Elite Bundle</a>
                 </div>
@@ -132,170 +141,21 @@
     <section class="section features-section">
         <div class="container">
             <h2 class="section-title">Why Choose FreeVerse?</h2>
-            <p class="section-subtitle">Experience the difference with our premium features</p>
-
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
                     <h3>Lightning Fast</h3>
-                    <p>Our high-performance nodes ensure minimal latency and maximum performance for your Minecraft server.</p>
+                    <p>High-performance nodes ensure minimal latency and maximum performance.</p>
                 </div>
-
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
                     <h3>Secure & Reliable</h3>
-                    <p>Enterprise-grade DDoS protection and 99.9% uptime guarantee keep your server safe and accessible.</p>
+                    <p>Enterprise-grade DDoS protection and 99.9% uptime guarantee.</p>
                 </div>
-
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
                     <h3>24/7 Support</h3>
-                    <p>Our dedicated support team is available around the clock to help you with any issues or questions.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Easy Setup</h3>
-                    <p>Get your server or bots running in minutes with our simple setup process and comprehensive guides.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Scalable</h3>
-                    <p>Easily upgrade your plans as your community grows without any downtime or complicated migrations.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-coins"></i>
-                    </div>
-                    <h3>Flexible Payment</h3>
-                    <p>Choose between OwO, invites, or direct payment options that suit your preferences and budget.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Preview Section -->
-    <section class="section pricing-preview">
-        <div class="container">
-            <h2 class="section-title">Affordable Premium Plans</h2>
-            <p class="section-subtitle">Get started with our most popular plans</p>
-
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Starter Bot</h3>
-                        <div class="price">119K <small>OwO</small></div>
-                        <p>Perfect for small communities</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 4 Hours Runtime</li>
-                        <li><i class="fas fa-check"></i> Auto Restart</li>
-                        <li><i class="fas fa-check"></i> Basic Support</li>
-                        <li><i class="fas fa-times"></i> Custom Messages</li>
-                    </ul>
-                    <a href="/vault?category=bot-hosting&plan=starter" class="btn btn-outline">Get Started</a>
-                </div>
-
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <div class="pricing-header">
-                        <h3>Pro Bot</h3>
-                        <div class="price">359K <small>OwO</small></div>
-                        <p>Ideal for growing servers</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 12 Hours Runtime</li>
-                        <li><i class="fas fa-check"></i> Auto Restart</li>
-                        <li><i class="fas fa-check"></i> Multiple Instances</li>
-                        <li><i class="fas fa-check"></i> Custom Messages</li>
-                    </ul>
-                    <a href="/vault?category=bot-hosting&plan=pro" class="btn btn-primary">Get Pro</a>
-                </div>
-
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Elite Server</h3>
-                        <div class="price">₹199 <small>Lifetime</small></div>
-                        <p>For serious communities</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 8 GB RAM</li>
-                        <li><i class="fas fa-check"></i> 20 GB SSD</li>
-                        <li><i class="fas fa-check"></i> 4 vCore CPU</li>
-                        <li><i class="fas fa-check"></i> Priority Support</li>
-                    </ul>
-                    <a href="/vault?category=server-hosting&plan=elite" class="btn btn-outline">Go Elite</a>
-                </div>
-            </div>
-
-            <div class="pricing-footer">
-                <a href="/vault" class="btn btn-secondary">View All Plans</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="section testimonials-section">
-        <div class="container">
-            <h2 class="section-title">What Our Community Says</h2>
-            <p class="section-subtitle">Join thousands of satisfied Minecraft server owners</p>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"FreeVerse's AFK bots completely transformed my server. The uptime is incredible and the setup was super easy!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="author-info">
-                            <h4>Alex_Minecraft</h4>
-                            <p>Server Owner</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The India nodes give me amazing ping and the 24/7 support has been incredibly helpful. Worth every penny!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="author-info">
-                            <h4>ServerPro_91</h4>
-                            <p>Community Manager</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"I've tried multiple hosting services, but FreeVerse's combination of performance and pricing is unbeatable."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="author-info">
-                            <h4>BuildMaster</h4>
-                            <p>Content Creator</p>
-                        </div>
-                    </div>
+                    <p>Dedicated support team available around the clock.</p>
                 </div>
             </div>
         </div>
@@ -306,7 +166,7 @@
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to Boost Your Minecraft Server?</h2>
-                <p>Join thousands of server owners who trust FreeVerse for their hosting needs. Get started in minutes!</p>
+                <p>Join thousands of server owners who trust FreeVerse.</p>
                 <div class="cta-buttons">
                     <a href="/register" class="btn btn-primary">Start Free Trial</a>
                     <a href="/support" class="btn btn-outline">Contact Sales</a>
@@ -321,12 +181,11 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>FreeVerse</h3>
-                    <p>Premium Minecraft Services - Bots & Server Hosting. Keep your server active 24/7 with our reliable solutions.</p>
+                    <p>Premium Minecraft Services - Bots & Server Hosting</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-discord"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -335,7 +194,6 @@
                         <li><a href="/">Home</a></li>
                         <li><a href="/vault">Vault</a></li>
                         <li><a href="/dashboard">Dashboard</a></li>
-                        <li><a href="/support">Support</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -343,34 +201,25 @@
                     <ul>
                         <li><a href="/vault?category=bot-hosting">AFK Bot Hosting</a></li>
                         <li><a href="/vault?category=server-hosting">Server Hosting</a></li>
-                        <li><a href="#">Setup Guide</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Refund Policy</a></li>
-                        <li><a href="#">DMCA</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 FreeVerse. All rights reserved. | Ultimate Minecraft Services</p>
+                <p>&copy; 2025 FreeVerse. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button id="scroll-top" class="scroll-top-btn">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- Toast Notification -->
+    <!-- Components -->
+    <button id="scroll-top" class="scroll-top-btn"><i class="fas fa-chevron-up"></i></button>
     <div id="toast" class="toast"></div>
 
+    <!-- JavaScript -->
+    <script src="/js/router.js"></script>
+    <script src="/js/components/navigation.js"></script>
+    <script src="/js/components/notifications.js"></script>
+    <script src="/js/components/modals.js"></script>
+    <script src="/js/pages/home.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>
