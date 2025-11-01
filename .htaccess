@@ -1,0 +1,18 @@
+RewriteEngine On
+
+# Remove .html extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Clean URLs for main pages
+RewriteRule ^$ index.html [L]
+RewriteRule ^vault$ vault.html [L]
+RewriteRule ^dashboard$ dashboard.html [L]
+RewriteRule ^login$ login.html [L]
+RewriteRule ^register$ register.html [L]
+RewriteRule ^support$ contact.html [L]
+RewriteRule ^admin$ admin.html [L]
+
+# Handle 404 errors
+ErrorDocument 404 /404.html
