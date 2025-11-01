@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - FreeVerse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="logo">
+                <span class="logo-text">FreeVerse</span>
+            </div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">FreeVerse</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="vault.html" class="nav-link">Vault</a>
+                <a href="dashboard.html" class="nav-link active">Dashboard</a>
+                <a href="contact.html" class="nav-link">Support</a>
+                <a href="login.html" class="nav-link login-btn">Login</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <div class="user-avatar">
+                    <img src="assets/images/avatar.jpg" alt="User Avatar">
+                </div>
+                <div class="user-info">
+                    <h3>JohnDoe</h3>
+                    <p>Premium Member</p>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-box"></i>
+                    <span>My Items</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-download"></i>
+                    <span>Downloads</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Support</span>
+                </a>
+                <a href="index.html" class="nav-item logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <div class="dashboard-header">
+                <h1>Dashboard</h1>
+                <p>Welcome back, John! Here's your activity overview.</p>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>24</h3>
+                        <p>Items Claimed</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>18</h3>
+                        <p>Downloads</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>4.8</h3>
+                        <p>Average Rating</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>30</h3>
+                        <p>Days Active</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Items -->
+            <section class="dashboard-section">
+                <h2>Recently Claimed Items</h2>
+                <div class="claimed-items">
+                    <div class="claimed-item">
+                        <div class="item-image">
+                            <img src="assets/images/game-account.jpg" alt="Item">
+                        </div>
+                        <div class="item-details">
+                            <h3>Valorant Premium Account</h3>
+                            <p>Claimed 2 days ago</p>
+                            <span class="item-category">Game Account</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="btn btn-small">Download</button>
+                        </div>
+                    </div>
+                    <div class="claimed-item">
+                        <div class="item-image">
+                            <img src="assets/images/plugin.jpg" alt="Item">
+                        </div>
+                        <div class="item-details">
+                            <h3>Minecraft Optimization Pack</h3>
+                            <p>Claimed 5 days ago</p>
+                            <span class="item-category">Plugin</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="btn btn-small">Download</button>
+                        </div>
+                    </div>
+                    <div class="claimed-item">
+                        <div class="item-image">
+                            <img src="assets/images/map.jpg" alt="Item">
+                        </div>
+                        <div class="item-details">
+                            <h3>CS:GO Custom Map Pack</h3>
+                            <p>Claimed 1 week ago</p>
+                            <span class="item-category">Map</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="btn btn-small">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recommended Items -->
+            <section class="dashboard-section">
+                <h2>Recommended For You</h2>
+                <div class="recommended-grid">
+                    <div class="recommended-item">
+                        <div class="item-image">
+                            <img src="assets/images/game-account2.jpg" alt="Item">
+                        </div>
+                        <div class="item-content">
+                            <h3>Fortnite Bundle</h3>
+                            <p>Rare skins and V-Bucks included</p>
+                            <div class="item-meta">
+                                <span class="category">Game Account</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i> 4.7
+                                </span>
+                            </div>
+                            <button class="btn btn-small">Get Now</button>
+                        </div>
+                    </div>
+                    <div class="recommended-item">
+                        <div class="item-image">
+                            <img src="assets/images/plugin2.jpg" alt="Item">
+                        </div>
+                        <div class="item-content">
+                            <h3>GTA V Mod Pack</h3>
+                            <p>Enhance your gameplay experience</p>
+                            <div class="item-meta">
+                                <span class="category">Plugin</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i> 4.9
+                                </span>
+                            </div>
+                            <button class="btn btn-small">Get Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FreeVerse</h3>
+                    <p>Unlock premium digital resources for free. Join our community today!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="vault.html">Vault</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="contact.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Game Accounts</a></li>
+                        <li><a href="#">Plugins</a></li>
+                        <li><a href="#">Maps</a></li>
+                        <li><a href="#">Scripts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">DMCA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FreeVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top-btn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

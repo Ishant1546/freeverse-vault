@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - FreeVerse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="logo">
+                <span class="logo-text">FreeVerse</span>
+            </div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">FreeVerse</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="vault.html" class="nav-link">Vault</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                <a href="contact.html" class="nav-link">Support</a>
+                <a href="login.html" class="nav-link login-btn">Login</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admin Layout -->
+    <div class="admin-layout">
+        <!-- Admin Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <div class="admin-avatar">
+                    <img src="assets/images/admin-avatar.jpg" alt="Admin Avatar">
+                </div>
+                <div class="admin-info">
+                    <h3>Admin User</h3>
+                    <p>Administrator</p>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-box"></i>
+                    <span>Manage Items</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>Users</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Analytics</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-flag"></i>
+                    <span>Reports</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+                <a href="index.html" class="nav-item logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Admin Main Content -->
+        <main class="admin-main">
+            <div class="admin-header">
+                <h1>Admin Dashboard</h1>
+                <p>Manage your FreeVerse platform</p>
+            </div>
+
+            <!-- Admin Stats -->
+            <div class="admin-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>1,247</h3>
+                        <p>Total Items</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>8,542</h3>
+                        <p>Total Users</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>24,891</h3>
+                        <p>Total Downloads</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>32</h3>
+                        <p>Pending Reports</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <h2>Quick Actions</h2>
+                <div class="action-buttons">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                        Add New Item
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-user-plus"></i>
+                        Add User
+                    </button>
+                    <button class="btn btn-outline">
+                        <i class="fas fa-cog"></i>
+                        System Settings
+                    </button>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="admin-section">
+                <h2>Recent Activity</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-details">
+                            <p><strong>New user registration</strong> - john_doe joined FreeVerse</p>
+                            <span class="activity-time">2 minutes ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="activity-details">
+                            <p><strong>Item downloaded</strong> - Valorant Premium Account by user_gamer123</p>
+                            <span class="activity-time">15 minutes ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <div class="activity-details">
+                            <p><strong>New report submitted</strong> - Report #1245 for inappropriate content</p>
+                            <span class="activity-time">1 hour ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <div class="activity-details">
+                            <p><strong>New item added</strong> - Minecraft Texture Pack by admin_user</p>
+                            <span class="activity-time">3 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manage Items Table -->
+            <div class="admin-section">
+                <div class="section-header">
+                    <h2>Manage Items</h2>
+                    <div class="table-controls">
+                        <input type="text" placeholder="Search items..." class="search-input">
+                        <select class="filter-select">
+                            <option>All Categories</option>
+                            <option>Accounts</option>
+                            <option>Plugins</option>
+                            <option>Maps</option>
+                            <option>Configs</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Downloads</th>
+                                <th>Rating</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#001</td>
+                                <td>Valorant Premium Account</td>
+                                <td>Game Account</td>
+                                <td>1,247</td>
+                                <td>4.8</td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button class="btn btn-small">Edit</button>
+                                    <button class="btn btn-small btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#002</td>
+                                <td>Minecraft Optimization Pack</td>
+                                <td>Plugin</td>
+                                <td>892</td>
+                                <td>4.9</td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button class="btn btn-small">Edit</button>
+                                    <button class="btn btn-small btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#003</td>
+                                <td>CS:GO Custom Map Pack</td>
+                                <td>Map</td>
+                                <td>754</td>
+                                <td>4.7</td>
+                                <td><span class="status pending">Pending</span></td>
+                                <td>
+                                    <button class="btn btn-small">Edit</button>
+                                    <button class="btn btn-small btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#004</td>
+                                <td>GTA V Mod Collection</td>
+                                <td>Plugin</td>
+                                <td>1,103</td>
+                                <td>4.6</td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button class="btn btn-small">Edit</button>
+                                    <button class="btn btn-small btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FreeVerse</h3>
+                    <p>Unlock premium digital resources for free. Join our community today!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="vault.html">Vault</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="contact.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Game Accounts</a></li>
+                        <li><a href="#">Plugins</a></li>
+                        <li><a href="#">Maps</a></li>
+                        <li><a href="#">Scripts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">DMCA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FreeVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top-btn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

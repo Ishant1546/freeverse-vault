@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault - FreeVerse</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="logo">
+                <span class="logo-text">FreeVerse</span>
+            </div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/">FreeVerse</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/vault" class="nav-link active">Vault</a>
+                <a href="/dashboard" class="nav-link">Dashboard</a>
+                <a href="/support" class="nav-link">Support</a>
+                <a href="/login" class="nav-link login-btn">Login</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Vault Header -->
+    <section class="vault-header">
+        <div class="container">
+            <h1 class="page-title">The Vault</h1>
+            <p class="page-subtitle">Premium Services for Minecraft Community</p>
+            
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="bot-hosting">🤖 Bot Hosting</button>
+                <button class="category-tab" data-category="server-hosting">🌍 Server Hosting</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bot Hosting Section -->
+    <section class="plans-section active" id="bot-hosting-section">
+        <div class="container">
+            <!-- Performance Toggle for Bot Plans -->
+            <div class="performance-toggle">
+                <button class="toggle-btn active" data-performance="low">Low Performance</button>
+                <button class="toggle-btn" data-performance="high">High Performance</button>
+            </div>
+
+            <!-- Low Performance Bot Plans -->
+            <div class="plan-category" id="low-performance-bot-plans">
+                <div class="plan-category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="category-info">
+                        <h2>AFK Bot Hosting Plans (Low Performance)</h2>
+                        <p class="category-note">🤖 Bots will join and keep your Minecraft server active. Hosted on other country nodes — not guaranteed 24/7.</p>
+                    </div>
+                </div>
+
+                <div class="plans-grid">
+                    <!-- Starter Plan -->
+                    <div class="plan-card starter">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <h3>Starter Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">119K OwO / 8 invites</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>Up To 4 Hours Continuous Runtime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-sync"></i>
+                                <span>Restarts Automatically If Kicked</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>Other Country Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn" data-plan="starter-bot-low">
+                            Get This Plan
+                        </button>
+                    </div>
+
+                    <!-- Advanced Plan -->
+                    <div class="plan-card advanced">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Advanced Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">199K OwO / 15 invites</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>Up To 8 Hours Continuous Runtime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-sync"></i>
+                                <span>Restarts Automatically If Kicked</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>Supports Multiple Bot Instances</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>Other Country Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn" data-plan="advanced-bot-low">
+                            Get This Plan
+                        </button>
+                    </div>
+
+                    <!-- Pro Plan -->
+                    <div class="plan-card pro">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h3>Pro Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">359K OwO / 25 invites</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>Up To 12 Hours Continuous Runtime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-sync"></i>
+                                <span>Restarts Automatically If Kicked</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>Supports Multiple Bot Instances</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-comment"></i>
+                                <span>Custom Join/Chat Messages</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>Other Country Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn" data-plan="pro-bot-low">
+                            Get This Plan
+                        </button>
+                    </div>
+
+                    <!-- Elite Plan -->
+                    <div class="plan-card elite">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-diamond"></i>
+                            </div>
+                            <h3>Elite Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">699K OwO / 39 invites</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>Up To 16 Hours Continuous Runtime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-sync"></i>
+                                <span>Restarts Automatically If Kicked</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>Supports Multiple Bot Instances</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-comment"></i>
+                                <span>Custom Join/Chat Messages</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-tools"></i>
+                                <span>Priority Setup Support</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>Other Country Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn" data-plan="elite-bot-low">
+                            Get This Plan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- High Performance Bot Plans -->
+            <div class="plan-category" id="high-performance-bot-plans" style="display: none;">
+                <div class="plan-category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="category-info">
+                        <h2>AFK Bot Hosting Plans (High Performance)</h2>
+                        <p class="category-note">🇮🇳 These plans use India nodes for best performance! ♾️ Guaranteed 24/7 uptime.</p>
+                    </div>
+                </div>
+
+                <div class="plans-grid">
+                    <!-- Starter Plan High -->
+                    <div class="plan-card starter high-performance">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <h3>Starter Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">₹39 / Lifetime</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-infinity"></i>
+                                <span>Guaranteed 24/7 Uptime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-sync"></i>
+                                <span>Restarts Automatically If Kicked</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>India Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn" data-plan="starter-bot-high">
+                            Get This Plan
+                        </button>
+                    </div>
+
+                    <!-- Advanced Plan High -->
+                    <div class="plan-card advanced high-performance">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Advanced Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">₹79 / Lifetime</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-infinity"></i>
+                                <span>Guaranteed 24/7 Uptime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-sync"></i>
+                                <span>Restarts Automatically If Kicked</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>Supports Multiple Bot Instances</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>India Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn" data-plan="advanced-bot-high">
+                            Get This Plan
+                        </button>
+                    </div>
+
+                    <!-- Pro Plan High -->
+                    <div class="plan-card pro high-performance">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h3>Pro Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">₹149 / Lifetime</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-infinity"></i>
+                                <span>Guaranteed 24/7 Uptime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-sync"></i>
+                                <span>Restarts Automatically If Kicked</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>Supports Multiple Bot Instances</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-comment"></i>
+                                <span>Custom Join/Chat Messages</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>India Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn" data-plan="pro-bot-high">
+                            Get This Plan
+                        </button>
+                    </div>
+
+                    <!-- Elite Plan High -->
+                    <div class="plan-card elite high-performance">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-diamond"></i>
+                            </div>
+                            <h3>Elite Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">₹199 / Lifetime</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-infinity"></i>
+                                <span>Guaranteed 24/7 Uptime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-sync"></i>
+                                <span>Restarts Automatically If Kicked</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>Supports Multiple Bot Instances</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-comment"></i>
+                                <span>Custom Join/Chat Messages</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-tools"></i>
+                                <span>Priority Setup Support</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>India Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn" data-plan="elite-bot-high">
+                            Get This Plan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Server Hosting Section -->
+    <section class="plans-section" id="server-hosting-section" style="display: none;">
+        <div class="container">
+            <!-- Performance Toggle for Server Plans -->
+            <div class="performance-toggle">
+                <button class="toggle-btn active" data-performance="low">Low Performance</button>
+                <button class="toggle-btn" data-performance="high">High Performance</button>
+            </div>
+
+            <!-- Low Performance Server Plans -->
+            <div class="plan-category" id="low-performance-server-plans">
+                <div class="plan-category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="category-info">
+                        <h2>Low Performance Server Plans</h2>
+                        <p class="category-note warning">📢 Note: These Server Plans Are Not Released Yet — Stay Tuned!<br>🌍 Hosted On Other Country Nodes — Suitable For Small To Medium Communities.</p>
+                    </div>
+                </div>
+
+                <div class="plans-grid">
+                    <!-- Starter Server Plan -->
+                    <div class="plan-card starter">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <h3>Starter Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">250K Owo / 15 Invites</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-memory"></i>
+                                <span>2 GB RAM</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-hdd"></i>
+                                <span>5 GB SSD Storage</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-microchip"></i>
+                                <span>50% Shared CPU</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Basic DDoS Protection</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-infinity"></i>
+                                <span>24/7 Uptime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>Other Country Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn coming-soon" data-plan="starter-server-low">
+                            Coming Soon
+                        </button>
+                    </div>
+
+                    <!-- Advanced Server Plan -->
+                    <div class="plan-card advanced">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Advanced Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">550K Owo / 25 Invites</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-memory"></i>
+                                <span>4 GB RAM</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-hdd"></i>
+                                <span>10 GB SSD Storage</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-microchip"></i>
+                                <span>100% Shared CPU</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Premium DDoS Protection</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-infinity"></i>
+                                <span>24/7 Uptime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>Other Country Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn coming-soon" data-plan="advanced-server-low">
+                            Coming Soon
+                        </button>
+                    </div>
+
+                    <!-- Pro Server Plan -->
+                    <div class="plan-card pro">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h3>Pro Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">899K Owo / 45 Invites</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-memory"></i>
+                                <span>6 GB RAM</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-hdd"></i>
+                                <span>15 GB SSD Storage</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-microchip"></i>
+                                <span>200% Shared CPU</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Advanced DDoS Protection</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-infinity"></i>
+                                <span>24/7 Uptime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>Other Country Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn coming-soon" data-plan="pro-server-low">
+                            Coming Soon
+                        </button>
+                    </div>
+
+                    <!-- Elite Server Plan -->
+                    <div class="plan-card elite">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-diamond"></i>
+                            </div>
+                            <h3>Elite Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">1.5M Owo / 80 Invites</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-memory"></i>
+                                <span>8 GB RAM</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-hdd"></i>
+                                <span>20 GB SSD Storage</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-microchip"></i>
+                                <span>400% Shared CPU</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Enterprise DDoS Protection</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-medal"></i>
+                                <span>Priority Support</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-infinity"></i>
+                                <span>24/7 Uptime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>Other Country Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn coming-soon" data-plan="elite-server-low">
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- High Performance Server Plans -->
+            <div class="plan-category" id="high-performance-server-plans" style="display: none;">
+                <div class="plan-category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="category-info">
+                        <h2>High Performance Server Plans</h2>
+                        <p class="category-note warning">📢 Note: These Server Plans Are Not Released Yet — Stay Tuned!<br>🇮🇳 Hosted On India Nodes — Best For Low Ping In India.</p>
+                    </div>
+                </div>
+
+                <div class="plans-grid">
+                    <!-- Starter+ Server Plan -->
+                    <div class="plan-card starter high-performance">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <h3>Starter+ Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">₹49 Lifetime</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-memory"></i>
+                                <span>2 GB RAM</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-hdd"></i>
+                                <span>5 GB SSD Storage</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-microchip"></i>
+                                <span>0.5 vCore Dedicated CPU</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Basic DDoS Protection</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-infinity"></i>
+                                <span>24/7 Uptime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>India Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn coming-soon" data-plan="starter-server-high">
+                            Coming Soon
+                        </button>
+                    </div>
+
+                    <!-- Advanced+ Server Plan -->
+                    <div class="plan-card advanced high-performance">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Advanced+ Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">₹119 Lifetime</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-memory"></i>
+                                <span>4 GB RAM</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-hdd"></i>
+                                <span>10 GB SSD Storage</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-microchip"></i>
+                                <span>1 vCore Dedicated CPU</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Premium DDoS Protection</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-infinity"></i>
+                                <span>24/7 Uptime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>India Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn coming-soon" data-plan="advanced-server-high">
+                            Coming Soon
+                        </button>
+                    </div>
+
+                    <!-- Pro+ Server Plan -->
+                    <div class="plan-card pro high-performance">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <h3>Pro+ Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">₹199 Lifetime</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-memory"></i>
+                                <span>6 GB RAM</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-hdd"></i>
+                                <span>15 GB SSD Storage</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-microchip"></i>
+                                <span>2 vCore Dedicated CPU</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Advanced DDoS Protection</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-infinity"></i>
+                                <span>24/7 Uptime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>India Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn coming-soon" data-plan="pro-server-high">
+                            Coming Soon
+                        </button>
+                    </div>
+
+                    <!-- Elite+ Server Plan -->
+                    <div class="plan-card elite high-performance">
+                        <div class="plan-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h3>Elite+ Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">₹399 Lifetime</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-memory"></i>
+                                <span>8 GB RAM</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-hdd"></i>
+                                <span>20 GB SSD Storage</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-microchip"></i>
+                                <span>4 vCore Dedicated CPU</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Enterprise DDoS Protection</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-medal"></i>
+                                <span>Priority Support</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-infinity"></i>
+                                <span>24/7 Uptime</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-server"></i>
+                                <span>India Node</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full get-plan-btn coming-soon" data-plan="elite-server-high">
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Choose Your Plan</h3>
+                    <p>Select the perfect plan for your Minecraft server needs</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Complete Payment</h3>
+                    <p>Use OwO, invites, or pay in INR depending on your chosen plan</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Setup & Configuration</h3>
+                    <p>Our team will set up everything for your Minecraft server</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Enjoy Premium Service</h3>
+                    <p>Experience premium hosting with 24/7 support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FreeVerse</h3>
+                    <p>Premium Minecraft Services - Bots & Server Hosting</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/vault">Vault</a></li>
+                        <li><a href="/dashboard">Dashboard</a></li>
+                        <li><a href="/support">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/vault?category=bot-hosting">AFK Bot Hosting</a></li>
+                        <li><a href="/vault?category=server-hosting">Server Hosting</a></li>
+                        <li><a href="#">Setup Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">DMCA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FreeVerse. All rights reserved. | Ultimate Minecraft Services</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top-btn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
