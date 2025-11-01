@@ -9,7 +9,7 @@ function initURLRouting() {
     // Intercept all internal link clicks
     document.addEventListener('click', function(e) {
         const link = e.target.closest('a');
-        if (link && link.href && link.href.startsWith(window.location.origin)) {
+        if (link && link.href && link.href.startsWith(window.location.origin) && !link.hasAttribute('data-no-routing')) {
             e.preventDefault();
             const url = new URL(link.href);
             navigateTo(url.pathname + url.search);
@@ -32,8 +32,18 @@ function handleURLChange() {
 }
 
 function navigateTo(url) {
-    history.pushState(null, '', url);
-    handleURLChange();
+    // Check if it's a different page or same page with different params
+    const currentPath = window.location.pathname;
+    const newPath = new URL(url, window.location.origin).pathname;
+    
+    if (currentPath !== newPath) {
+        // Different page - do full navigation
+        window.location.href = url;
+    } else {
+        // Same page - use pushState and handle locally
+        history.pushState(null, '', url);
+        handleURLChange();
+    }
 }
 
 function updateActiveNav(path) {
@@ -57,6 +67,9 @@ function handleVaultURL(params) {
     
     if (category && typeof activateCategory === 'function') {
         activateCategory(category);
+    } else {
+        // No category selected, show welcome message
+        showVaultWelcome();
     }
     
     if (performance && typeof activatePerformance === 'function') {
@@ -76,5 +89,5 @@ function updateVaultURL(category, performance = null, plan = null) {
     if (plan) params.set('plan', plan);
     
     const url = '/vault' + (params.toString() ? `?${params.toString()}` : '');
-    navigateTo(url);
+    history.pushState(null, '', url);
 }

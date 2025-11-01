@@ -54,10 +54,10 @@ function initializeApp() {
     }
 }
 
-// Get current page name
+// In the initializeApp function, update the page detection:
 function getCurrentPage() {
     const path = window.location.pathname;
-    if (path === '/' || path === '/index.html') return 'home';
+    if (path === '/' || path === '/index.html' || path === '') return 'home';
     if (path.includes('vault')) return 'vault';
     if (path.includes('login') || path.includes('register')) return 'auth';
     if (path.includes('dashboard')) return 'dashboard';
